@@ -9,18 +9,18 @@ export const IMAGES = {
     operations:
       "https://images.unsplash.com/photo-1523848309072-c199db53f137?w=1920&h=1080&fit=crop",
     underground:
-      "https://images.unsplash.com/photo-1592422546486-fb80ec694548?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1651672397008-01d088f4a9f6?w=800&h=600&fit=crop",
     openPit:
       "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&h=600&fit=crop",
     equipment:
       "https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800&h=600&fit=crop",
-    site: "https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?w=800&h=600&fit=crop",
+    site: "https://images.unsplash.com/photo-1523848309072-c199db53f137?w=800&h=600&fit=crop",
     facility:
-      "https://images.unsplash.com/photo-1497671954146-59a89ff626ff?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560872236-f1232b00263f?w=800&h=600&fit=crop",
     landscape:
       "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
     industrial:
-      "https://images.unsplash.com/photo-1464036388609-c845f8dfc9b3?w=800&h=600&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1661911778005-bda918172dd3?w=800&h=600&fit=crop",
   },
 
   // Hero/Banner Images
@@ -46,19 +46,19 @@ export const IMAGES = {
     highlandValley:
       "https://images.unsplash.com/photo-1611348524140-53c9a25263d6?w=800&h=600&fit=crop",
     losAndes:
-      "https://images.unsplash.com/photo-1592422546486-fb80ec694548?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1651672397008-01d088f4a9f6?w=800&h=600&fit=crop",
     goldenRidge:
       "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&h=600&fit=crop",
     rareEarth:
       "https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800&h=600&fit=crop",
     silverstone:
-      "https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1523848309072-c199db53f137?w=800&h=600&fit=crop",
     zambezi:
-      "https://images.unsplash.com/photo-1497671954146-59a89ff626ff?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560872236-f1232b00263f?w=800&h=600&fit=crop",
     nordic:
       "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
     andean:
-      "https://images.unsplash.com/photo-1464036388609-c845f8dfc9b3?w=800&h=600&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1661911778005-bda918172dd3?w=800&h=600&fit=crop",
   },
 
   // Products
@@ -69,13 +69,13 @@ export const IMAGES = {
     graphite:
       "https://images.unsplash.com/photo-1585427006146-9948883f2a0e?w=800&h=600&fit=crop",
     rareEarth:
-      "https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1523848309072-c199db53f137?w=800&h=600&fit=crop",
     silver:
       "https://images.unsplash.com/photo-1716369414930-bcdc1565fa3c?w=800&h=600&fit=crop",
     molybdenum:
-      "https://images.unsplash.com/photo-1592422546486-fb80ec694548?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1651672397008-01d088f4a9f6?w=800&h=600&fit=crop",
     lithium:
-      "https://images.unsplash.com/photo-1464036388609-c845f8dfc9b3?w=800&h=600&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1661911778005-bda918172dd3?w=800&h=600&fit=crop",
     zinc: "https://images.unsplash.com/photo-1611348524140-53c9a25263d6?w=800&h=600&fit=crop",
   },
 
@@ -86,13 +86,13 @@ export const IMAGES = {
     partnership:
       "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=800&h=600&fit=crop",
     community:
-      "https://images.unsplash.com/photo-1497671954146-59a89ff626ff?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560872236-f1232b00263f?w=800&h=600&fit=crop",
     technology:
       "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=600&fit=crop",
     safety:
       "https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800&h=600&fit=crop",
     water:
-      "https://images.unsplash.com/photo-1592422546486-fb80ec694548?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1651672397008-01d088f4a9f6?w=800&h=600&fit=crop",
     exploration:
       "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
     sustainability:
@@ -102,13 +102,13 @@ export const IMAGES = {
   // Sustainability/Community
   sustainability: {
     education:
-      "https://images.unsplash.com/photo-1497671954146-59a89ff626ff?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560872236-f1232b00263f?w=800&h=600&fit=crop",
     scholarship:
       "https://images.unsplash.com/photo-1611348524140-53c9a25263d6?w=800&h=600&fit=crop",
     health:
-      "https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1523848309072-c199db53f137?w=800&h=600&fit=crop",
     water:
-      "https://images.unsplash.com/photo-1592422546486-fb80ec694548?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1651672397008-01d088f4a9f6?w=800&h=600&fit=crop",
     business:
       "https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800&h=600&fit=crop",
     environment:
