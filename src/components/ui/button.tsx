@@ -3,7 +3,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex flex-nowrap items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
@@ -18,9 +18,9 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
-        default: "h-11 px-6 py-2.5 text-sm",
-        sm: "h-9 px-4 py-2 text-sm",
-        lg: "h-12 px-8 py-3 text-base",
+        default: "h-11 px-6 py-2.5 text-sm min-w-fit",
+        sm: "h-9 px-4 py-2 text-sm min-w-fit",
+        lg: "h-12 px-8 py-3 text-base min-w-fit",
         icon: "h-10 w-10 p-0",
       },
     },
@@ -39,13 +39,23 @@ export interface ButtonProps
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, children, ...props }, ref) => {
+    // Process children to ensure icons don't shrink
+    const processedChildren = React.Children.map(children, (child) => {
+      if (React.isValidElement(child) && child.type === 'svg') {
+        return React.cloneElement(child as React.ReactElement<any>, {
+          className: cn('flex-shrink-0', (child.props as any).className)
+        });
+      }
+      return child;
+    });
+
     return (
       <button
         className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
         {...props}
       >
-        {children}
+        {processedChildren || children}
       </button>
     )
   }
