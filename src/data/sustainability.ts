@@ -1,3 +1,4 @@
+import { SustainabilityImages } from './images';
 import { SustainabilityMetric, SafetyRecord, CommunityInitiative } from '@/types';
 
 export const sustainabilityMetrics: SustainabilityMetric[] = [
@@ -112,7 +113,7 @@ export const communityInitiatives: CommunityInitiative[] = [
     description: 'State-of-the-art educational facility providing vocational training, computer literacy, and academic support to 500+ students annually.',
     location: 'Zambia',
     impact: '500+ students trained annually, 82% employment rate',
-    image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop',
+    image: SustainabilityImages.education,
     startDate: '2024',
     category: 'education',
   },
@@ -122,7 +123,7 @@ export const communityInitiatives: CommunityInitiative[] = [
     description: 'Annual scholarship program supporting local students pursuing careers in engineering, environmental science, and geology.',
     location: 'British Columbia, Canada',
     impact: '150 scholarships awarded, $2.5M total investment',
-    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop',
+    image: SustainabilityImages.scholarship,
     startDate: '2010',
     category: 'education',
   },
@@ -132,7 +133,7 @@ export const communityInitiatives: CommunityInitiative[] = [
     description: 'Fleet of fully-equipped mobile health units providing primary healthcare, vaccinations, and health education to remote communities.',
     location: 'Chile & Peru',
     impact: '15,000+ patients served annually',
-    image: 'https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=800&h=600&fit=crop',
+    image: SustainabilityImages.health,
     startDate: '2018',
     category: 'health',
   },
@@ -142,7 +143,7 @@ export const communityInitiatives: CommunityInitiative[] = [
     description: 'Development of clean water access infrastructure including wells, pumping stations, and distribution systems for local communities.',
     location: 'Multiple Sites',
     impact: '25,000 people gained access to clean water',
-    image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop',
+    image: SustainabilityImages.water,
     startDate: '2019',
     category: 'infrastructure',
   },
@@ -152,7 +153,7 @@ export const communityInitiatives: CommunityInitiative[] = [
     description: 'Supporting local entrepreneurs with training, microloans, and business mentorship to create sustainable economic opportunities.',
     location: 'Australia & Zambia',
     impact: '240 businesses supported, 800+ jobs created',
-    image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop',
+    image: SustainabilityImages.business,
     startDate: '2017',
     category: 'employment',
   },
@@ -162,7 +163,7 @@ export const communityInitiatives: CommunityInitiative[] = [
     description: 'Collaboration with environmental organizations to protect endangered species and restore critical habitats near mining operations.',
     location: 'Global',
     impact: '5,000 hectares protected, 3 species recovery programs',
-    image: 'https://images.unsplash.com/photo-1535083783855-76ae62b2914e?w=800&h=600&fit=crop',
+    image: SustainabilityImages.environment,
     startDate: '2015',
     category: 'environment',
   },

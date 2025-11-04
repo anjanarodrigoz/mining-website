@@ -1,3 +1,4 @@
+import { ProductImages } from './images';
 export interface Product {
   id: string;
   name: string;
@@ -39,7 +40,7 @@ export const products: Product[] = [
       'Electrical components',
       'Construction materials',
     ],
-    image: 'https://images.unsplash.com/photo-1611348524140-53c9a25263d6?w=800&h=600&fit=crop',
+    image: ProductImages.copper,
     gallery: [
       'https://images.unsplash.com/photo-1611348524140-53c9a25263d6?w=800&h=600&fit=crop',
       'https://images.unsplash.com/photo-1592422546486-fb80ec694548?w=800&h=600&fit=crop',
@@ -70,7 +71,7 @@ export const products: Product[] = [
       'Electronics industry',
       'Dental applications',
     ],
-    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&h=600&fit=crop',
+    image: ProductImages.gold,
     gallery: [
       'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&h=600&fit=crop',
       'https://images.unsplash.com/photo-1610375461246-83df859d849d?w=800&h=600&fit=crop',
@@ -101,7 +102,7 @@ export const products: Product[] = [
       'Brake linings',
       'Foundry coatings',
     ],
-    image: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800&h=600&fit=crop',
+    image: ProductImages.graphite,
     grade: 'High Carbon',
     purity: '94-99% C',
     available: true,
@@ -128,7 +129,7 @@ export const products: Product[] = [
       'Electronic devices',
       'Catalysts',
     ],
-    image: 'https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?w=800&h=600&fit=crop',
+    image: ProductImages.rareEarth,
     grade: 'Premium Mixed REO',
     purity: '55-65% REO',
     available: true,
@@ -154,7 +155,7 @@ export const products: Product[] = [
       'Photography',
       'Investment products',
     ],
-    image: 'https://images.unsplash.com/photo-1611348524140-53c9a25263d6?w=800&h=600&fit=crop',
+    image: ProductImages.copper,
     grade: 'Investment Grade',
     purity: '99.9% Ag',
     available: true,
@@ -181,7 +182,7 @@ export const products: Product[] = [
       'Corrosion-resistant coatings',
       'Chemical industry',
     ],
-    image: 'https://images.unsplash.com/photo-1592422546486-fb80ec694548?w=800&h=600&fit=crop',
+    image: ProductImages.molybdenum,
     grade: 'Technical Grade',
     purity: '54-58% Mo',
     available: true,
@@ -208,7 +209,7 @@ export const products: Product[] = [
       'Ceramics and glass',
       'Pharmaceuticals',
     ],
-    image: 'https://images.unsplash.com/photo-1464036388609-c845f8dfc9b3?w=800&h=600&fit=crop',
+    image: ProductImages.lithium,
     grade: 'Battery Grade',
     purity: '99.5% Li2CO3',
     available: true,
@@ -235,7 +236,7 @@ export const products: Product[] = [
       'Brass production',
       'Chemical manufacturing',
     ],
-    image: 'https://images.unsplash.com/photo-1611348524140-53c9a25263d6?w=800&h=600&fit=crop',
+    image: ProductImages.copper,
     grade: 'Smelter Grade',
     purity: '50-55% Zn',
     available: true,

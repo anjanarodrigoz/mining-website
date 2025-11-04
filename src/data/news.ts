@@ -1,3 +1,4 @@
+import { NewsImages } from './images';
 import { NewsArticle } from '@/types';
 
 export const newsArticles: NewsArticle[] = [
@@ -9,7 +10,7 @@ export const newsArticles: NewsArticle[] = [
     category: 'company-update',
     date: '2024-11-01',
     author: 'TerraMin Communications',
-    image: 'https://images.unsplash.com/photo-1611348524140-53c9a25263d6?w=800&h=600&fit=crop',
+    image: NewsImages.production,
     featured: true,
   },
   {
@@ -20,7 +21,7 @@ export const newsArticles: NewsArticle[] = [
     category: 'press-release',
     date: '2024-10-28',
     author: 'TerraMin Communications',
-    image: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=800&h=600&fit=crop',
+    image: NewsImages.partnership,
     featured: true,
   },
   {
@@ -42,7 +43,7 @@ export const newsArticles: NewsArticle[] = [
     category: 'industry-news',
     date: '2024-10-08',
     author: 'Technology Division',
-    image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=600&fit=crop',
+    image: NewsImages.technology,
   },
   {
     id: '5',
@@ -52,7 +53,7 @@ export const newsArticles: NewsArticle[] = [
     category: 'company-update',
     date: '2024-09-22',
     author: 'Safety Department',
-    image: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800&h=600&fit=crop',
+    image: NewsImages.safety,
   },
   {
     id: '6',
@@ -62,7 +63,7 @@ export const newsArticles: NewsArticle[] = [
     category: 'sustainability',
     date: '2024-09-10',
     author: 'Environmental Team',
-    image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop',
+    image: NewsImages.water,
   },
   {
     id: '7',
@@ -72,7 +73,7 @@ export const newsArticles: NewsArticle[] = [
     category: 'company-update',
     date: '2024-08-28',
     author: 'Exploration Team',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop',
+    image: NewsImages.exploration,
   },
   {
     id: '8',
@@ -82,7 +83,7 @@ export const newsArticles: NewsArticle[] = [
     category: 'sustainability',
     date: '2024-08-15',
     author: 'Sustainability Division',
-    image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&h=600&fit=crop',
+    image: NewsImages.sustainability,
   },
 ];
 

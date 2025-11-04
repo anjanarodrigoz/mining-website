@@ -1,3 +1,4 @@
+import { TeamImages } from './images';
 import { TeamMember } from '@/types';
 
 export const leadershipTeam: TeamMember[] = [
@@ -6,7 +7,7 @@ export const leadershipTeam: TeamMember[] = [
     name: 'Sarah Mitchell',
     position: 'Chief Executive Officer',
     bio: 'Sarah brings over 25 years of mining industry experience, having led major operations across four continents. Her vision for sustainable mining has transformed TerraMin into an industry leader.',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop',
+    image: TeamImages.ceo,
     linkedin: 'https://linkedin.com',
     email: 's.mitchell@terramin.com',
   },
@@ -15,7 +16,7 @@ export const leadershipTeam: TeamMember[] = [
     name: 'Dr. James Chen',
     position: 'Chief Operating Officer',
     bio: 'James oversees all mining operations globally, implementing cutting-edge technology and safety protocols. His PhD in Mining Engineering drives operational excellence.',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop',
+    image: TeamImages.coo,
     linkedin: 'https://linkedin.com',
     email: 'j.chen@terramin.com',
   },
@@ -24,7 +25,7 @@ export const leadershipTeam: TeamMember[] = [
     name: 'Maria Rodriguez',
     position: 'Chief Financial Officer',
     bio: 'Maria leads financial strategy with expertise in mining finance and investor relations. She has successfully guided TerraMin through major expansions and market cycles.',
-    image: 'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&h=400&fit=crop',
+    image: TeamImages.cfo,
     linkedin: 'https://linkedin.com',
     email: 'm.rodriguez@terramin.com',
   },
@@ -33,7 +34,7 @@ export const leadershipTeam: TeamMember[] = [
     name: 'David Thompson',
     position: 'VP of Sustainability',
     bio: 'David champions environmental stewardship and community relations. Under his leadership, TerraMin has achieved industry-leading sustainability metrics.',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop',
+    image: TeamImages.vpSustainability,
     linkedin: 'https://linkedin.com',
     email: 'd.thompson@terramin.com',
   },
@@ -42,7 +43,7 @@ export const leadershipTeam: TeamMember[] = [
     name: 'Dr. Aisha Patel',
     position: 'Chief Technology Officer',
     bio: 'Aisha drives technological innovation in mining operations, specializing in automation, AI, and predictive analytics to enhance safety and efficiency.',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop',
+    image: TeamImages.cto,
     linkedin: 'https://linkedin.com',
     email: 'a.patel@terramin.com',
   },
@@ -51,7 +52,7 @@ export const leadershipTeam: TeamMember[] = [
     name: 'Robert Anderson',
     position: 'VP of Safety & Compliance',
     bio: 'Robert ensures world-class safety standards across all operations. His 30 years in mine safety have established TerraMin as an industry safety leader.',
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop',
+    image: TeamImages.vpSafety,
     linkedin: 'https://linkedin.com',
     email: 'r.anderson@terramin.com',
   },

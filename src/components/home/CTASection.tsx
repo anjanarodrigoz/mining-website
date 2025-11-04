@@ -1,3 +1,4 @@
+import { MiningImages } from '@/data/images';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -8,7 +9,7 @@ export function CTASection() {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&h=600&fit=crop"
+          src={MiningImages.operations}
           alt="Mining operations"
           className="w-full h-full object-cover"
         />

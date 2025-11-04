@@ -1,3 +1,4 @@
+import { HeroImages } from '@/data/images';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -9,7 +10,7 @@ export function HeroSection() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1611348524140-53c9a25263d6?w=1920&h=1080&fit=crop"
+          src={HeroImages.home}
           alt="Mining operations"
           className="w-full h-full object-cover"
         />
