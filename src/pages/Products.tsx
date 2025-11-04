@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle } from 'lucide-react';
+import { ArrowRight, CheckCircle, Package } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { PageHero } from '@/components/PageHero';
 import { products, productCategories } from '@/data/products';
 
 export function Products() {
@@ -15,26 +16,13 @@ export function Products() {
       : products.filter((p) => p.category === selectedCategory);
 
   return (
-    <div className="pt-20">
+    <div>
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="https://images.unsplash.com/photo-1611348524140-53c9a25263d6?w=1920&h=600&fit=crop"
-            alt="Mining products"
-            className="w-full h-full object-cover opacity-20"
-          />
-        </div>
-        <div className="relative z-10 container-custom text-white">
-          <h1 className="text-5xl md:text-6xl font-display font-bold mb-6">
-            Our Products
-          </h1>
-          <p className="text-xl text-gray-200 max-w-3xl">
-            Premium quality minerals and concentrates from our world-class operations.
-            We deliver consistent quality products that meet international standards.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="Our Products"
+        description="Premium quality minerals and concentrates from our world-class operations. We deliver consistent quality products that meet international standards."
+        imagePlaceholder="Mining Products & Minerals"
+      />
 
       {/* Category Filter */}
       <section className="py-8 bg-gray-50 border-b sticky top-20 z-10">
@@ -64,12 +52,13 @@ export function Products() {
                 className="overflow-hidden hover:shadow-2xl transition-all duration-300 group animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
-                <div className="relative h-64 overflow-hidden">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
+                <div className="relative h-64 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center overflow-hidden group-hover:from-sky-100 group-hover:to-blue-100 transition-all duration-500">
+                  <div className="text-center p-6">
+                    <Package className="h-20 w-20 mx-auto text-gray-400 group-hover:text-sky-600 transition-colors mb-4" />
+                    <div className="text-sm font-medium text-gray-600 group-hover:text-gray-800">
+                      {product.name}
+                    </div>
+                  </div>
                   <div className="absolute top-4 right-4">
                     {product.available ? (
                       <Badge variant="success" className="shadow-lg">
@@ -140,7 +129,7 @@ export function Products() {
                   <Button asChild className="w-full" size="lg">
                     <Link to={`/products/${product.id}`}>
                       View Details
-                      <ArrowRight className="ml-2 h-5 w-5" />
+                      <ArrowRight className="h-5 w-5" />
                     </Link>
                   </Button>
                 </CardContent>

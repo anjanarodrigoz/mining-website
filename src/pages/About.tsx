@@ -1,23 +1,19 @@
-import { Mail, Linkedin } from 'lucide-react';
+import { Mail, Linkedin, User } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { PageHero } from '@/components/PageHero';
 import { companyInfo, milestones, coreValues } from '@/data/company';
 import { leadershipTeam } from '@/data/team';
 
 export function About() {
   return (
-    <div className="pt-20">
+    <div>
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-br from-sky-900 to-blue-900">
-        <div className="container-custom text-white">
-          <h1 className="text-5xl md:text-6xl font-display font-bold mb-6">
-            About {companyInfo.name}
-          </h1>
-          <p className="text-xl text-gray-200 max-w-3xl">
-            {companyInfo.description}
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title={`About ${companyInfo.name}`}
+        description={companyInfo.description}
+        imagePlaceholder="Company Heritage"
+      />
 
       {/* Company History */}
       <section id="history" className="py-20">
@@ -67,12 +63,13 @@ export function About() {
                 className="overflow-hidden hover:shadow-xl transition-all duration-300 animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="relative h-64 overflow-hidden bg-gray-200">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover"
-                  />
+                <div className="relative h-64 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                  <div className="text-center">
+                    <User className="h-24 w-24 mx-auto text-gray-400 mb-4" />
+                    <div className="text-sm text-gray-500 px-4">
+                      {member.name}
+                    </div>
+                  </div>
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-1">
